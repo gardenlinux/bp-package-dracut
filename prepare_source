@@ -1,2 +1,6 @@
-git_src -b 109-2 https://salsa.debian.org/debian/dracut.git
-version_suffix=gl0~bp2061
+version=108-7
+
+git_src --branch "$version" "https://salsa.debian.org/debian/dracut.git"
+version_suffix=gl0~bp1877
+
+apply_patches fixes_debian

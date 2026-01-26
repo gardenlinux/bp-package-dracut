@@ -1,0 +1,21 @@
+diff --git a/debian/control b/debian/control
+index c83545b..b3404ed 100644
+--- a/debian/control
++++ b/debian/control
+@@ -4,7 +4,6 @@ Priority: optional
+ Maintainer: Thomas Lange <lange@debian.org>
+ Uploaders: Benjamin Drung <bdrung@debian.org>
+ Build-Depends: debhelper-compat (= 13),
+-               3cpio [!alpha !hppa !m68k !sh4] <!nocheck>,
+                asciidoctor,
+                bash-completion,
+                cpio [alpha hppa m68k sh4] <!nocheck>,
+@@ -22,7 +21,7 @@ Homepage: https://github.com/dracut-ng/dracut-ng/wiki
+ Package: dracut-core
+ Architecture: any
+ Multi-Arch: foreign
+-Depends: 3cpio | cpio,
++Depends: cpio,
+          dracut-install,
+          e2fsprogs,
+          kmod,
